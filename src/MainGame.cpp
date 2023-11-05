@@ -1,6 +1,6 @@
 #include "MainGame.h"
 
-//                        initialize the window via an initializer list
+// initialize the window via an initializer list
 MainGame::MainGame() 
 	: 
 	_window("Jauntlet Game Engine", _screenWidth, _screenHeight, 0),
