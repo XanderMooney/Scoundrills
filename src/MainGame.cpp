@@ -57,21 +57,9 @@ void MainGame::gameLoop() {
 }
 
 void MainGame::processInput() {
-	// process all possible inputs through the input manager
-	_inputManager.processInput();
-
 	// runs if the user quits the game through alt+f4, the X in the corner of the window, or any other means
 	if (_inputManager.quitGameCalled()) {
 		_gameState = GameState::EXIT;
-	}
-	// runs if the window is resized by the user during runtime
-	if (_inputManager.windowResized()) {
-		_window.resolveWindowSize(); // find the updated window size
-		// update local variables
-		_screenWidth = _window.getWindowWidth();
-		_screenHeight = _window.getWindowHeight();
-		// tell the camera the new window size
-		_camera.updateCameraSize(_screenWidth, _screenHeight);
 	}
 }
 
@@ -85,7 +73,7 @@ void MainGame::drawGame() {
 
 	// --> Draw things you want to render here <--
 
-	// disables shaders
+	// disable shaders
 	_colorProgram.unuse();
 	// put the newly rendered objects on screen
 	_window.swapBuffer();
