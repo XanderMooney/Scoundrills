@@ -36,3 +36,8 @@ dependencies/lib/libjauntlet.a
 
 # Profiler Output Files
 callgrind.out.*
+
+# Ninja Files
+*.ninja
+*.ninja_log
+*.ninja_deps
