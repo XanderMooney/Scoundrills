@@ -67,6 +67,7 @@ cat <<EOF > "$APPDIR/$GAMENAME.desktop"
 Name=$GAMENAME
 Exec=$GAMENAME
 Icon=$GAMENAME
+Comment=Jauntlet engine appimage generator generic comment
 Type=Application
 Categories=Game;
 EOF
