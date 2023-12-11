@@ -39,8 +39,8 @@ endif()
 # On all platforms, link the jauntlet library with our executable.
 target_link_libraries(game PRIVATE jauntlet)
 
-# Link scoundrills with its dependencies
-target_link_libraries(scoundrills PRIVATE ${SDL2_LIBRARIES} ${GLEW_LIBRARIES} ${OPENGL_LIBRARIES} ${FREETYPE_LIBRARIES})
+# Link game with its dependencies
+target_link_libraries(game PRIVATE ${SDL2_LIBRARIES} ${GLEW_LIBRARIES} ${OPENGL_LIBRARIES} ${FREETYPE_LIBRARIES})
 
 # Specify include directories for the "Jauntlet" directory (outside of it)
 target_include_directories(game PRIVATE "${CMAKE_SOURCE_DIR}")
