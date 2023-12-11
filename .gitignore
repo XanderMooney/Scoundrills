@@ -6,6 +6,7 @@
 # Executables
 *.exe
 build/visualizer
+*.AppImage
 
 # Visual Studio
 .vs/
