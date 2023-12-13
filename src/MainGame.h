@@ -3,7 +3,7 @@
 #include <Jauntlet/Time.h>
 #include <Jauntlet/Rendering/Window.h>
 #include <Jauntlet/Rendering/GLSLProgram.h>
-#include <Jauntlet/Rendering/ResourceManager.h>
+#include <Jauntlet/Rendering/Textures/ResourceManager.h>
 #include <Jauntlet/Rendering/Cameras/Camera2D.h>
 #include <Jauntlet/Inputs/InputManager.h>
 
