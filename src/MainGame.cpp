@@ -57,6 +57,7 @@ void MainGame::gameLoop() {
 }
 
 void MainGame::processInput() {
+	_inputManager.processInput();
 	// runs if the user quits the game through alt+f4, the X in the corner of the window, or any other means
 	if (_inputManager.quitGameCalled()) {
 		_gameState = GameState::EXIT;
